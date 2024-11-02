@@ -1,0 +1,31 @@
+.support-container{
+    min-height: 90vh;
+    
+}
+
+.support-container .course-detail-card{
+    margin-left: 7vw;
+}
+
+.support-container .course-detail-description{
+    border: 1px solid gray;
+     border-radius: 5px;
+    padding: 4px;
+}
+.support-card {
+    border: 1px solid gray;
+     border-radius: 5px;
+    margin: 10px 0;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;  
+}
+
+.support-card:hover {
+    background-color: rgb(241, 241, 241);
+    transform: scale(1.02);  
+}
+
+.no-tickets-message{
+    color: rgb(125, 125, 125);
+}

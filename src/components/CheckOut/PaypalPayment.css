@@ -1,0 +1,93 @@
+/* PaypalPayment.css */
+
+.payment-container {
+  max-width: 430px;
+  margin: 150px auto 0;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  min-height: 70vh;
+  margin-bottom: 130px;
+}
+
+.payment-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  background-clip: text;
+  font-family: 'Poppins', sans-serif;
+}
+
+.course-summary {
+  margin: 20px 0;
+}
+
+.course-item-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: large;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+h2, h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+ } */
+
+ .payment-success-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+@media (max-width: 600px) {
+  .payment-container {
+    padding: 15px;
+  }
+
+  .payment-header {
+    font-size: 1.5rem;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  .course-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* button {
+    width: 100%;
+    padding: 10px 15px;
+  } */
+}

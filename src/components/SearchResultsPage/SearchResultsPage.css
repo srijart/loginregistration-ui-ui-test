@@ -1,0 +1,124 @@
+.search-results-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-family: Arial, sans-serif;
+    min-height: 80vh;
+  }
+  
+  .search-results-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .search-results-list {
+    width: 100%;
+  }
+  
+  .course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    padding-top: 4px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .course-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .course-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    background: var(--Es-Heading-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .course-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  .course-item a {
+    margin-left: auto;
+    background: var(--Es-Heading-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .pagination .active {
+    background-color: var(--Profile-tabs-button-active-color);
+    color: #fff;
+  }
+  
+  .pagination button:disabled {
+    cursor: not-allowed;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+  }
+
+  .search-main-container{
+    display: flex;
+  }
+
+  .search-results-img{
+    width: 130px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
+  }
+  @media (max-width: 768px) {
+    .no-results {
+       font-size: 12px;
+   }
+
+   .search-results-container { 
+    margin-top: 40px;
+   }
+
+   .search-results-title {
+    font-size: 17px;
+   }
+
+   .course-item { 
+    padding: 16px 0px; 
+  }
+  }
+  

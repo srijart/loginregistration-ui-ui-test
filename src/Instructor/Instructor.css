@@ -1,0 +1,298 @@
+.instructor-page{
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+} 
+  .i-sidebar { 
+    padding: 40px 0px 20px 20px;
+    align-items: center;
+    width: 240px;
+    background:  var( --nav-background2);
+    height: 90vh;
+  }
+  
+  .i-sidebar button {
+    display: block;  
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    width: 100%;
+    padding: 16px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    font-size: 17px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: var(--sidebar-profile-color);  
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+  .i-sidebar button.active {
+    background-color: white; 
+    color:var(--course-header-color);
+  }
+  
+   .i-content {
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .course-management-container {
+    padding: 20px;
+  }
+  
+  .new-course-button {
+    background: var(--login-form-submit-button);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+  }
+  
+  .new-course-button:hover {
+    background: var(--login-form-submit-button);
+  }
+  
+  .course-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .course-table th{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+  }
+
+  .course-table th,
+  .course-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  .course-table tr td{
+    border: 1px solid var(--search-input-bg)
+  }
+  
+  .course-table th {
+    background: var(--login-form-submit-button);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .course-table td {
+    background-color: #fff;
+  }
+  
+  .action-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .Edit-Course-button{
+    color: green;
+  }
+
+  .Delete-Course-button{
+    color: red;
+  }
+  
+  .action-buttons button:hover {
+    color: #ff7e5f;
+  }
+  
+
+  .image-container{
+    position: relative;
+    display: flex;
+    margin: 20px 0px 0px 20px;
+  }
+
+  .i-image{
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-content {
+    background: linear-gradient(180deg, #FDEE4B -71.67%, #F29A2E 27.17%, #E75A0A 76.58%, #A53D08 101.29%, #4D2412 126%);
+    /* background-color: white; */
+    padding: 20px;
+    width: 800px;
+    /* height: 800px; */
+    /* max-height: auto; */
+    color: white;
+  }
+  
+  .modal-title{
+    font-family: 'Merriweather', serif;
+  }
+  .modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .modal-top{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cm-form-group {
+    margin-bottom: 15px;
+  } 
+  .cm-form-group input {
+    font-family: 'Source Serif Pro', serif;
+    width: 95%;
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    background: rgba(255, 255, 255, 0.22);
+    color: white;
+    border-radius: 5px;
+    outline: 1px solid #c07f2b;
+  }
+
+  .cm-form-group textarea {
+    font-family: 'Source Serif Pro', serif;
+    width: 95%;
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    background: rgba(255, 255, 255, 0.22);
+    color: white;
+    border-radius: 5px;
+    outline: 1px solid #c07f2b;
+  }
+
+  .cm-form-group select {
+    font-family: 'Source Serif Pro', serif;
+    width: 95%;
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    background: rgba(255, 255, 255, 0.22);
+    color: #c07f2b;
+    border-radius: 5px;
+    outline: 1px solid #c07f2b;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cm-cancel-button,
+  .cm-post-button {    
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .cm-cancel-button { 
+    background: white;
+    font-size: medium;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 20px;
+    max-height: 20px;
+    color: #c0392b;
+    cursor: pointer;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .cm-post-button {
+    background-color: rgba(255, 255, 255, 0.88);
+    color: #c0392b; 
+    width: 100%;
+    height: 33px;
+    border: none;
+  }
+  
+  .cm-post-button:hover {
+    background-color:  rgb(255, 255, 255);
+  }
+  
+.instructor-image {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  margin-top: 8px;
+  cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;    
+    background-color: var(--main-login-cointainer-bg);
+    color: var(--course-header-color);
+    font-weight: bold;
+}
+
+  @media (max-width: 768px){
+    .instructor-page{
+      flex-direction: column;
+      align-items: center;
+      min-height: 70vh;
+  } 
+  .i-sidebar { 
+    padding: 40px 0px 20px 20px;
+    align-items: center;
+    width: 240px;
+    background:  none;
+    height: 6vh;
+  }
+
+  
+  .i-content {
+    width: 90%;
+    /* height: 70vh; */
+
+  }
+
+
+
+  .course-table th, .course-table td{
+    font-size: small;
+  }
+
+  .new-course-button{
+    font-size: small;
+  }
+
+  .course-management-container{
+    width: 90%;
+  }
+
+  h2, h3{
+    font-size: 0.8rem;
+  }
+  }

@@ -1,0 +1,114 @@
+.coursedetails-content-maincontainer {
+  padding: 20px;
+  margin-top: 48px;
+  width: 100%;
+}
+
+.coursedetails-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.coursedetails-content-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.coursedetails-modules-desktop {
+  display: block;
+  background-color: var(--course-detail-modules);
+  color: white;
+  width: 30%;
+  padding: 20px;
+}
+
+.coursedetails-modules-mobile {
+  display: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.coursedetails-dropdown {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--course-detail-modules);
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.coursedetails-module {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  background-color: var(--course-detail-module);
+  margin-bottom: 5px;
+}
+
+.coursedetails-module.active {
+  background-color: #fff;
+  color: var(--course-detail-module-active);
+  font-weight: bold;
+}
+
+.coursedetails-lessons {
+  background-color: #fff;
+  width: 70%;
+  padding: 20px;
+  border: 2px solid var(--course-detail-border-color);
+  margin: 0px 20px;
+}
+
+.coursedetails-lesson {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.course-module-title {
+  color: white;
+}
+
+.coursedetails-lesson:hover {
+  color: var(--course-detail-modules);
+}
+
+.coursedetails-lesson.active {
+  font-weight: bold;
+  color: #f26e21;
+}
+
+.coursedetails-start {
+  color: var(--course-detail-module-active);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .coursedetails-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coursedetails-lessons-title{
+    padding: 0 10px;
+  }
+  .coursedetails-lessons { 
+    padding: 10px 0px;
+  }
+  .coursedetails-modules-desktop {
+    display: none; 
+  }
+
+  .coursedetails-modules-mobile {
+    display: block;   
+  }
+
+  .coursedetails-lessons,
+  .coursedetails-modules-mobile {
+    width: 100%;
+  }
+}

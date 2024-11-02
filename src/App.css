@@ -1,0 +1,147 @@
+ body {
+  background-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  margin: 0;
+}
+
+.light-mode{
+  --nav-background:  #f7c42a;
+  --nav-background2: linear-gradient(180deg, #FDEE4B -17%, #F29A2E 54.5%, #E75A0A 90.25%, #A53D08 108.12%, #4D2412 126%);
+  --nav-mob-bg: #f7c42a;
+  --nav-mob-bg2: #ee9b1e;
+  --search-input-bg:#f7c42a;
+  --search-input-bg2: linear-gradient(180deg,  #FDEE4B -17%, #F29A2E 54.5% );
+  --nav-buttons:#FFF7A5;
+  --nav-buttons-text: #E75A0A;
+  --nav-buttons-hover: #f9ef68e3;
+  --nav-links-open: #f7c42a;
+  --start-learning-btn-text: #E75A0A;
+  --search-dropdown: #fed24e;
+  --Es-Heading-color:linear-gradient(90deg, #EEAF61 0%, #FB9062 50%, #FF4A33 100%);
+  --Es-button:linear-gradient(90deg, #EEAF61 0%, #FB9062 50%, #FF4A33 100%);
+  --ES-bg-color: white; 
+  --Cp-Container-color: #F09D37;
+  --course-card-color: linear-gradient(180deg, #FDEE4B -20.4%, #F29A2E 39.8%, #E75A0A 69.9%, #A53D08 84.95%, #4D2412 126%);
+  --btn-bgcolor: linear-gradient(180deg, #FDEE4B -20.4%, #F29A2E 39.8%, #E75A0A 69.9%, #A53D08 94.95%, #4D2412 110%);
+  --btn-bgcolor-hover: linear-gradient(180deg, #FDEE4B -30.4%, #F29A2E 49.8%, #E75A0A 79.9%, #A53D08 94.95%, #4D2412 110%);
+  --bgcolor-active:#ffae4b53 ;
+  --course-header-color: #E75A0A;
+  --login-form-h2:rgba(240, 157, 55, 1);
+  --login-form-p: rgba(240, 157, 55, 1);   
+  --main-login-cointainer-bg: rgba(240, 157, 55, 0.1);
+  --login-form-submit-button: linear-gradient(180deg, #FDEE4B -17%, #F29A2E 54.5%, #E75A0A 90.25%, #A53D08 108.12%, #4D2412 126%);
+  --login-options-a:rgba(240, 157, 55, 1);
+  --login-input-background: rgba(240, 157, 55, 0.2);
+  --login-input-border: 1px solid rgba(240, 157, 55, 0.5);
+  --login-input-color: rgba(240, 157, 55, 1);
+  --login-input-focus: 1.3px solid rgba(240, 157, 55, 0.5);
+  --login-input-placeholder: rgba(240, 157, 55, 1); 
+  --login-autofill-color:  0 0 0 30px rgba(240, 157, 55, 0.2) inset;  
+  --sidebar-profile-color: rgba(231, 90, 10, 1);
+  --sidebar-profile-border:  1px solid rgba(231, 90, 10, 1);
+  --section-content-label: rgba(231, 90, 10, 1);
+  --section-content-input-p: 0.5px solid rgba(231, 90, 10, 1);
+  --section-content-input-svg: rgba(231, 90, 10, 1);
+  --section-content-save-btn: rgba(231, 90, 10, 1);
+  --section-content-save-btn-hover:  rgb(254, 105, 19);
+  --Profile-tabs-button-hover: rgba(231, 90, 10, 1);
+  --Profile-tabs-button-active-color: rgba(231, 90, 10, 1);  
+  --Profile-tabs-button-active-border: 2px solid rgba(231, 90, 10, 1); 
+  --section-content-2fa-border: 0.5px solid rgba(231, 90, 10, 1);   
+  --section-content-input-not: 1.2px solid rgba(231, 90, 10, 1);
+  --course-detail-border-color: #f0a44e;
+  --course-detail-modules:#f26e21;
+  --course-detail-module: #e05a18;
+  --course-detail-module-active:#f26e21;
+  --apply-filter-button-bg:#FFF7A5;
+  --video-progress-track: linear-gradient(90deg, #FDEE4B -17%, #F29A2E 54.5%, #E75A0A 90.25%, #A53D08 108.12%, #4D2412 126%);
+  --apply-filter-active-radio: rgb(255, 177, 82);
+ 
+}
+
+.dark-mode{
+  --video-progress-track: linear-gradient(90deg, #77a1df -20.4%,  #306bc4  39.8%, #2d69c4 50.9%, #1B3762 100%);
+
+  --nav-background:  #1f56a8 ;
+  --nav-background2:linear-gradient(180deg, #3771c8 0%, #1B3762 100%);
+  --nav-mob-bg: #1f56a8;
+  --nav-mob-bg2: #014283;
+  --search-input-bg:  #1f56a8 ;
+  --search-input-bg2: linear-gradient(180deg, #3771C8 0%, #1B3762 100%);
+  --nav-buttons: rgba(255, 255, 255, 0.6);
+  --nav-buttons-text: rgba(255, 255, 255, 1);
+  --nav-buttons-hover: rgba(255, 255, 255, 0.429);
+  --nav-links-open: #1f56a8;
+  --start-learning-btn-text: #1B3762;
+  --search-dropdown: #3164b0;
+  --Es-Heading-color: linear-gradient(90deg, #4e80cc 0%,  #3771C8 50%, #1c3c6a 100%);
+  --ES-bg-color: rgba(55, 113, 200, 0.156);
+  --Es-button: linear-gradient(90deg, #6993d0 0%,  #3771C8 50%, #1B3762 100%);
+  --Cp-Container-color: rgba(30, 79, 152, 0.942);
+  --course-card-color: linear-gradient(180deg, #77a1df -20.4%,  #306bc4  39.8%, #2d69c4 50.9%, #1B3762 100%);
+  --btn-bgcolor: linear-gradient(180deg, #77a1df -20.4%,  #306bc4  39.8%, #2d69c4 50.9%, #1B3762 100%);
+  --btn-bgcolor-hover: linear-gradient(180deg, #77a1df -10.4%,  #306bc4  29.8%, #2d69c4 40.9%, #1B3762 90%);
+  --bgcolor-active:#5896f446 ;
+  --course-header-color: #2d69c4;
+  --login-form-h2: rgba(55, 113, 200, 1);
+  --login-form-p:  rgba(55, 113, 200, 1);  
+  --main-login-cointainer-bg:rgba(55, 113, 200, 0.1); 
+  --login-form-submit-button: linear-gradient(180deg, #3771C8 0%, #1B3762 100%);
+  --login-options-a:  rgba(55, 113, 200, 1); 
+  --login-input-background: rgba(55, 113, 200, 0.2);
+  --login-input-border: 1px solid rgba(55, 113, 200, 0.5);
+  --login-input-color: rgba(55, 113, 200, 1);
+  --login-input-focus: 1.3px solid rgba(55, 113, 200, 0.5);
+  --login-input-placeholder:  rgba(55, 113, 200, 1);
+  --login-autofill-color:  0 0 0 30px rgba(55, 113, 200, 0.2) inset;  
+  --sidebar-profile-color: rgba(55, 113, 200, 1);
+  --sidebar-profile-border:  1px solid rgba(55, 113, 200, 1);
+  --section-content-label:  rgba(55, 113, 200, 1);
+  --section-content-input-p: 0.5px solid  rgba(55, 113, 200, 1);
+  --section-content-input-svg:  rgba(55, 113, 200, 1);
+  --section-content-save-btn:rgba(55, 113, 200, 1);
+  --section-content-save-btn-hover:  rgb(72, 136, 231);
+  --Profile-tabs-button-hover: rgb(72, 136, 231);
+  --Profile-tabs-button-active-color: rgba(55, 113, 200, 1); 
+  --Profile-tabs-button-active-border: 2px solid rgba(55, 113, 200, 1);
+  --section-content-2fa-border: 0.5px solid rgba(55, 113, 200, 1);   
+  --section-content-input-not: 1.2px solid rgba(55, 113, 200, 1);
+  --course-detail-border-color: #5087da;
+  /* --illustration-img: url('../../assets/Illustrations_D.jpg'); */
+  --course-detail-module: #0a3e82;
+  --course-detail-modules: #1f56a8;
+  --course-detail-module-active: #0a3e82;
+  --apply-filter-button-bg:#d7e7ff;
+  --apply-filter-active-radio: rgb(181, 210, 255);
+
+
+ }
+.Toastify__toast-theme--light {
+  background-color: skyblue;
+ }
+ .Toastify__toast-theme--light {
+  background: rgb(202, 202, 202);
+  color: var(rgb(179, 179, 179)) 
+}
+ .Toastify__toast-body > div:last-child {
+  color: white;
+}
+
+#clipLoader{
+  text-align: center;
+  margin: 14vw 40vw !important;
+}
+
+.Toastify__toast {
+  position: fixed; 
+  top: 100px;
+  z-index: 10000;  
+}

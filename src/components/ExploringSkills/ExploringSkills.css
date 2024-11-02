@@ -1,0 +1,311 @@
+
+.ES-Container{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-color: var(--ES-bg-color);
+}
+
+.ES-Heading {
+    background: var(--Es-Heading-color);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+    background-clip: text;  
+    font-family: 'Poppins', sans-serif;
+} 
+
+ .ES-button{
+  padding: 15px;
+  font-size: 16PX;
+  background: var(--btn-bgcolor);
+  border: none;
+   color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+  outline: #ffef4299;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.ES-button:hover {
+  letter-spacing: 1px;
+  background-color: var(--btn-bgcolor-hover);
+}
+/* 
+.course-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  } */
+  
+  .prev-button,
+  .next-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 17px;
+    margin: 0px 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #555;
+  }
+
+  .splide-course-container{
+    margin-left: 20px;
+  }
+  .es-course-card {
+    position: relative; 
+    background: var(--course-card-color);
+    padding: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    min-width: 200px;
+    max-width: 300px; 
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 40px 5px;  
+    transition: transform 0.3s;
+    z-index: 0;
+}
+
+element.style {
+  margin-right: 0rem;
+  width: calc(50% - 0.35rem);
+}
+
+
+/* .es-course-maincontainer{
+
+} */
+.es-course-card:hover {
+    transform: scale(0.97);
+}
+
+
+  .es-course-title{
+    font-size: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+     font-weight: 600;
+     text-decoration: none;
+    min-height: 60px;
+  }
+  .es-course-image{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .splide__slide {
+    position: relative;  
+  }
+  
+  .splide-course-container {
+    margin: 0 ;
+    padding: 20px;
+    max-width: 94%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .side-card {
+    position: absolute;
+    top: 50%; 
+     z-index: 100; 
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--nav-links-open);
+    min-width: 220px;
+    max-width: 390px; 
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+  }
+  .es-sidecard-title{
+    font-size: 20px;
+    color: black;
+    text-align: start;
+  }
+  
+  .es-sidecard-description {
+    color: rgb(59, 59, 59);
+    text-align: start;
+    font-size: 14px;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    text-overflow: ellipsis;   
+}
+
+
+  .side-card h3 {
+    margin: 0 0 10px 0; 
+  }
+  
+  .side-card p {
+    margin: 0 0 16px 0; 
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);  
+  }
+
+  .es-sidecard-additionalInfo{
+    color: rgb(59, 59, 59);
+    text-align: start;
+    font-size: 14px;
+    }
+
+    .splide__arrow {
+      background-color: rgb(255, 255, 255) !important; /* Semi-transparent black background */
+      color: black !important; /* Arrow color */
+      width: 40px !important; /* Arrow width */
+      height: 40px !important; /* Arrow height */
+      border-radius: 50% !important; /* Make arrows circular */
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      transition: background-color 0.3s !important; /* Smooth transition for hover effect */
+    }
+ 
+    .loading-courses{
+      text-align: center;
+    }
+
+    .sidecard-buttons-container{
+      display: flex;
+      width: 100%;
+    }
+    
+    .course-footer{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .sidecard-buttons-container span{
+      width: 100%;
+    }
+    .sidecard-buttons-container button{
+      margin: auto;
+    }
+
+    .notification-font-error{
+      font-size: small;
+      color: red;
+    }
+  @media (max-width: 1086px) {
+    .ES-Heading {
+      font-size: 1.4rem;
+    } 
+     
+    .loading-courses{
+      font-size: small;    }
+  }  
+
+  @media (max-width: 786px) {
+    .ES-button{
+      padding: 10px 7px;
+      font-size: 11PX; 
+      width: 90%; 
+    }
+    .ES-Container{
+       margin-bottom: 0px;
+       margin-top: -8px;
+
+     }
+  }
+  
+  @media (max-width: 486px) {
+
+    
+  .es-sidecard-title{
+    font-size: 14px; 
+  }
+  
+  .es-sidecard-description{ 
+    font-size: 12px;
+  }  
+    .es-sidecard-additionalInfo{
+      font-size: small;
+    }
+    .ES-button {
+      font-size: 0.7rem;
+      padding: 10px 7px;
+      max-width: 90%;
+    }
+    .side-card {
+      font-size: small;
+      min-width: 140px;
+      max-width: 100px;
+      height: 210px;
+     }
+
+    
+     .es-course-card {
+      min-width: 140px;
+      max-width: 100px;
+      height: 219px;
+      margin: 0px;
+    }
+    
+    .splide__arrow{
+      margin-top: 20px;
+      margin-right: 19px;
+      width: 29px !important;
+    height: 29px !important;
+    }
+
+.SplideSlide{
+  width: 30px;
+}
+
+.es-course-title{
+  font-size: 13px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+   font-weight: 600;
+   text-decoration: none;
+  min-height: 60px;
+}
+
+.splide-course-container {
+  margin: 0 auto;
+  margin-left: 16px;
+  padding: 10px;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.course-price {
+  font-size: 13px; 
+  font-weight: 700;
+}
+
+  }
+  
+  

@@ -1,0 +1,26 @@
+.theme-toggle-button {
+    background-color:  var(--nav-buttons);
+    color: var(--nav-buttons-text);
+    padding: 6px 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;  
+    font-size: 16px;
+    transition: background 0.3s ease;
+    min-width: 50px;
+}
+
+.theme-toggle-button:hover {
+    background-color: var(--nav-buttons-hover);
+}
+
+.theme-toggle-button:focus {
+    outline: none;
+}
+
+@media (max-width: 1000px){
+
+    .theme-toggle-button {
+        padding: 4px 4px;
+    }
+}

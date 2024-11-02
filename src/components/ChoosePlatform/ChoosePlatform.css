@@ -1,0 +1,34 @@
+
+.CP-Container{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Cp-Container-color); 
+}
+
+.CP-Heading {
+    background-color: white;
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+    background-clip: text;  
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 786px) {
+.CP-Container{
+    min-height: 46vh;
+}
+
+    .CP-Heading {
+        font-size: 0.9rem;
+    }
+
+    .CP-button{
+        font-size: 0.7rem;
+        padding: 10px 7px;
+        max-width: 100px;
+    }
+}
+ 

@@ -1,0 +1,1 @@
+export const CLIENT_ID= 'ATd5XrWPSaTjf9hG9-eCyrtG9sIcgPZB8t5YxgFhm8m9JpXNFDpJpHJgC4D0BBKEDaXXK9FUkn93xbmy';

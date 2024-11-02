@@ -1,0 +1,239 @@
+.categories-container {
+    display: flex;
+    position: absolute;
+    font-size: small; 
+    background-color: white;
+    min-height: 60vh;
+    width: 160px;  
+    padding: 0px;
+    border: 1px solid #ccc;
+    text-align: start;
+    left: -90px;
+    top: 38px;
+   }
+  
+  .main-category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-category-list li {
+     padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: black;
+  }
+  
+  .sub-category-list {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 155px; 
+    background-color: white;
+    color: inherit;
+    width: 190px;
+    border: 1px solid #ccc;
+    text-align: center;
+    min-height: 60vh;
+    width: 170px;  
+    padding: 0px;   
+    display: block;
+    z-index: 100; 
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+    text-align: start;
+  }
+  
+  .sub-category-list li {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+
+  }
+  
+  .popular-topics-list {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 320px;  
+    background-color: #ffffff;
+    width: 160px;
+    color: black;
+    border: 1px solid #ccc;
+    min-height: 60vh;
+    width: 170px;  
+    padding: 0px;
+    display: block;
+    z-index: 101;  
+    pointer-events: none;  
+    transition: all 0.3s ease; 
+    text-align: start;
+  }
+
+  .sub-category-list li.active, .main-category-list li.active{
+    color: var(--Profile-tabs-button-active-color);
+
+  }
+
+  .popular-topics-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .active {
+   color: var(--Profile-tabs-button-active-color);
+
+  }
+  
+  .main-category-list li:hover + .sub-category-list,
+  .sub-category-list li:hover + .popular-topics-list {
+    pointer-events: auto;  
+    transition-delay: 0.1s; 
+  }
+  
+  .categories-container:hover .sub-category-list,
+  .categories-container:hover .popular-topics-list {
+    pointer-events: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .categories-container{
+      left:-210px;
+      top: 30px;
+      min-height: 65vh;
+    }
+ 
+    
+}
+
+@media (max-width: 768px) {
+    .categories-container {
+        font-size: smaller;
+        padding: 10px;
+         z-index: 10;
+        top: 30px;
+        left: -60px;
+        width: 80px;
+        min-height: 57.7vh;
+      }
+
+    .main-category-list {
+      left: 10px;
+      font-size: smaller;
+      width: 80px;
+      margin:0;
+    }
+    .sub-category-list {
+      left: 80px;
+      font-size: smaller;
+      width: 80px;
+      margin:0;
+      min-height: 60vh;
+
+    }
+    .popular-topics-list {
+        left: 160px;
+          font-size: smaller;
+       width: 70px;
+       margin:0;
+       min-height: 60vh;
+
+    }
+
+     
+}
+.mobile-categories-container {
+  position: relative;
+}
+
+.mobile-nav-link {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.mobile-categories-dropdown {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  min-height: 99.9vh;
+  background-color: inherit;
+  color: white;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.mobile-main-category-list,
+.mobile-sub-category-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-category-item,
+.mobile-sub-category-item {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: white;
+}
+
+.back-button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.mobile-categories-dropdown {
+  padding: 10px;
+  background-color: inherit; 
+}
+
+.mobile-main-category-list,
+.mobile-sub-category-list,
+.mobile-popular-topics-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-category-item,
+.mobile-sub-category-item,
+.mobile-topic-item {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-category-item:hover,
+.mobile-sub-category-item:hover,
+.mobile-topic-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
